@@ -1,0 +1,46 @@
+﻿@model IEnumerable<PatientCarePlan.Models.Activity>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Distance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Steps)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Flights)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Distance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Steps)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Flights)
+        </td>
+    </tr>
+}
+
+</table>

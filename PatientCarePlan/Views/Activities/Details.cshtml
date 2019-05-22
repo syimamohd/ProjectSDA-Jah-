@@ -1,0 +1,42 @@
+﻿@model PatientCarePlan.Models.Activity
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Activity</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Distance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Distance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Steps)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Steps)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Flights)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flights)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Date }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

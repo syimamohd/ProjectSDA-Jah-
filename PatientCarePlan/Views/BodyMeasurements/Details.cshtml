@@ -1,0 +1,66 @@
+﻿@model PatientCarePlan.Models.BodyMeasurement
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BodyMeasurement</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Height)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Height)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BodyFatPercent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BodyFatPercent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BodyMassIndex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BodyMassIndex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeanBodyMass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeanBodyMass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WaistCircumference)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WaistCircumference)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
